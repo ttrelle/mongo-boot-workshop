@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: springdata
+    rest:
+      base-path: /api
