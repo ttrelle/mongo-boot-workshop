@@ -66,6 +66,7 @@ mongorestore /import/pois.bson
 - [MongoDB Java Driver](http://mongodb.github.io/mongo-java-driver/)
 - [Spring Data MongoDB](https://docs.spring.io/spring-data/mongodb/docs/current/reference/html/)
 - [Spring Boot](https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/)
+- [Spring Initializr](http://start.spring.io/)
 - [Spring Data REST](https://docs.spring.io/spring-data/rest/docs/3.0.1.RELEASE/reference/html/)
 
 ## Slides

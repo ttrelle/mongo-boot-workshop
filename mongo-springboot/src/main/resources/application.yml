@@ -4,3 +4,6 @@ spring:
       database: springdata
     rest:
       base-path: /api
+management:
+  security:
+    enabled: false
