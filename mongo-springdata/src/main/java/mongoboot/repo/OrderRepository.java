@@ -6,9 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import mongoboot.domain.Order;
 
-public interface OrderRepository extends MongoRepository<Order, String> {
-
+public interface OrderRepository extends MongoRepository<Order, String> //, CustomOrderRepository 
+{
 	List<Order> findByItemsQuantity(int quantity);
-
-	
 }

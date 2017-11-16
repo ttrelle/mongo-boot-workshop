@@ -15,7 +15,6 @@ import com.mongodb.MongoClient;
 @EnableMongoRepositories("mongoboot.repo")
 public class LocalhostMongoConfiguration extends AbstractMongoConfiguration {
 
-
 	@Override
 	protected String getDatabaseName() {
 		return "springdata";

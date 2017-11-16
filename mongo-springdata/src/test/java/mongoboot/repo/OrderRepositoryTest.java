@@ -34,12 +34,7 @@ public class OrderRepositoryTest {
 	
 	@Test void shouldFindByItemsQuantity() {
 		// given
-		Order order = new Order("Tobias Trelle, gold customer");
-		List<Item> items = new ArrayList<Item>();
-		items.add( new Item(1, 47.11, "Item #1") );
-		items.add( new Item(2, 42.0, "Item #2") );
-		order.setItems(items);
-		repo.save(order);
+		givenOrder();
 		
 		// when
 		List<Order> orders = repo.findByItemsQuantity(2);
@@ -47,6 +42,15 @@ public class OrderRepositoryTest {
 		// then
 		assertThat(orders, notNullValue());
 		assertThat(orders.size(), is(1));
+	}
+	
+	private void givenOrder() {
+		Order order = new Order("Tobias Trelle, gold customer");
+		List<Item> items = new ArrayList<Item>();
+		items.add( new Item(1, 47.11, "Item #1") );
+		items.add( new Item(2, 42.0, "Item #2") );
+		order.setItems(items);
+		repo.save(order);
 	}
 	
 }
