@@ -4,7 +4,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -45,11 +44,9 @@ public class OrderRepositoryTest {
 	}
 	
 	private void givenOrder() {
-		Order order = new Order("Tobias Trelle, gold customer");
-		List<Item> items = new ArrayList<Item>();
-		items.add( new Item(1, 47.11, "Item #1") );
-		items.add( new Item(2, 42.0, "Item #2") );
-		order.setItems(items);
+		Order order = new Order("Tobias Trelle, gold customer", 
+				new Item(1, 47.11, "Item #1"),
+				new Item(2, 42.0, "Item #2") );
 		repo.save(order);
 	}
 	

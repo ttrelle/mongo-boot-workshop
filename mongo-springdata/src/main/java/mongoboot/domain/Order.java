@@ -1,6 +1,7 @@
 package mongoboot.domain;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
@@ -10,26 +11,21 @@ public class Order {
 
 	@Id private String id;
 	
-	private Date date;
+	private LocalDate date;
 	
 	@Field("custInfo") private String customerInfo;
 	
 	List<Item> items;
 	
 	public Order() {
-		this(null);
+		this.date = LocalDate.now();
 	}
 
-	public Order(String customerInfo) {
-		super();
+	public Order(String customerInfo, Item... items) {
+		this();
 		this.customerInfo = customerInfo;
+		this.items = Arrays.asList(items);
 	}
-
-	public Order(String id, String customerInfo) {
-		this(customerInfo);
-		this.id = id;
-	}
-	
 	
 	public String getId() {
 		return id;
@@ -39,11 +35,11 @@ public class Order {
 		this.id = id;
 	}
 
-	public Date getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
 
