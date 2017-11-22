@@ -67,6 +67,7 @@ mongorestore /import/pois.bson
 - [Spring Data MongoDB](https://docs.spring.io/spring-data/mongodb/docs/current/reference/html/)
 - [Spring Boot](https://docs.spring.io/spring-boot/docs/1.5.8.RELEASE/reference/htmlsingle/)
 - [Spring Initializr](http://start.spring.io/)
+- [Spring Boot Konfiguration](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html)
 - [Spring Data REST](https://docs.spring.io/spring-data/rest/docs/3.0.1.RELEASE/reference/html/)
 - [HAL - Hypermedia Application Language](http://stateless.co/hal_specification.html)
 

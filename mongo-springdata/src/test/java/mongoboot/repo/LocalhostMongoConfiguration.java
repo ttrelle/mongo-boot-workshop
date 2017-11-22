@@ -17,7 +17,7 @@ public class LocalhostMongoConfiguration extends AbstractMongoConfiguration {
 
 	@Override
 	protected String getDatabaseName() {
-		return "springdata";
+		return "test";
 	}
 
 	@Override

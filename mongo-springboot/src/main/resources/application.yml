@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      database: springdata
+      database: test
     rest:
       base-path: /api
 management:
