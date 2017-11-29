@@ -39,7 +39,7 @@ mongod
 
 ```
 # Switch to workspace location
-mongorestore data/pois.bson
+mongorestore -d test data/pois.bson
 ```
 
 ### Docker
@@ -58,7 +58,7 @@ docker-compose up
 docker exec -it mongodb bash
 
 # Data import from mount
-mongorestore /import/pois.bson
+mongorestore -d test /import/pois.bson
 ```
 
 ## Documentation
