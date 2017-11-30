@@ -14,7 +14,7 @@ git clone http://github.com/ttrelle/mongo-boot-workshop.git
 
 ### Nativ
 
-- Download [MongoDB 3.4.x](mongodb.com/download-center#community)
+- Download [MongoDB 3.4.x](http://mongodb.com/download-center#community)
 - Entpacken nach $MONGO_HOME
 - $MONGO_HOME/bin in Pfad aufnehmen:
 
