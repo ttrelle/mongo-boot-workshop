@@ -2,7 +2,7 @@ version: "2"
 
 services:
   mongodb:
-      image: mongo:3.4.10
+      image: bitnami/mongodb:4.2.2
       container_name: "mongodb"
       volumes:
         - ./data:/import
