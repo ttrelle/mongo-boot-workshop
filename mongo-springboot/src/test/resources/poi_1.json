@@ -1,0 +1,22 @@
+{
+        "_id" : 1,
+        "typ" : [
+                "gastro",
+                "kultur"
+        ],
+        "name" : "Unperfekthaus",
+        "tags" : "uph unperfekt perfekt haus essen",
+        "desc" : "Im Unperfekthaus bekommen Künstler & Gründer & Gruppen kostenlos Räume, Technik, Bühnen uvm.. Und mitten in diesem 4000qm großen Künstlerdorf treffen sich Privat- und Geschäftsleute zum Essen, für Seminare oder zu Besprechungen. Man feiert Geburtstage, Betriebsfeste, und wer will, kann sogar übernachten.",
+        "adresse" : {
+                "str" : "Friedrich-Ebert-Straße 18",
+                "plz" : 45127,
+                "ort" : "Essen"
+        },
+        "location" : {
+                "type" : "Point",
+                "coordinates" : [
+                        7.0075,
+                        51.45902
+                ]
+        }
+}
