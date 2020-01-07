@@ -1,9 +1,6 @@
 spring:
   data:
     mongodb:
-      database: test
+      uri: mongodb://localhost:27017/test
     rest:
       base-path: /api
-management:
-  security:
-    enabled: false
