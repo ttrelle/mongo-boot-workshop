@@ -1,7 +1,9 @@
 package mongoboot.domain;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 /**
  * @author Tobias Trelle
@@ -15,6 +17,13 @@ public class PointOfInterest {
     String name;
 
     String[] typ;
+
+    @Field("desc")
+    String descripton;
+
+    Address adresse;
+
+    GeoJsonPoint location;
 
     /**
      * @return the id
@@ -56,6 +65,48 @@ public class PointOfInterest {
      */
     public void setTyp(String[] typ) {
         this.typ = typ;
+    }
+
+    /**
+     * @return the descripton
+     */
+    public String getDescripton() {
+        return descripton;
+    }
+
+    /**
+     * @param descripton the descripton to set
+     */
+    public void setDescripton(String descripton) {
+        this.descripton = descripton;
+    }
+
+    /**
+     * @return the adresse
+     */
+    public Address getAdresse() {
+        return adresse;
+    }
+
+    /**
+     * @param adresse the adresse to set
+     */
+    public void setAdresse(Address adresse) {
+        this.adresse = adresse;
+    }
+
+    /**
+     * @return the location
+     */
+    public GeoJsonPoint getLocation() {
+        return location;
+    }
+
+    /**
+     * @param location the location to set
+     */
+    public void setLocation(GeoJsonPoint location) {
+        this.location = location;
     }
 
 }
