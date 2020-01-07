@@ -8,13 +8,13 @@ cd /tmp
 git clone http://github.com/ttrelle/mongo-boot-workshop.git
 ```
 
-- Download + Install [STS 3.9.x](https://spring.io/tools/sts/all)
+- Download + Install [STS](https://spring.io/tools)
 
 ## MongoDB Installation
 
 ### Nativ
 
-- Download [MongoDB 3.4.x](http://mongodb.com/download-center#community)
+- Download [MongoDB](http://mongodb.com/download-center#community)
 - Entpacken nach $MONGO_HOME
 - $MONGO_HOME/bin in Pfad aufnehmen:
 
