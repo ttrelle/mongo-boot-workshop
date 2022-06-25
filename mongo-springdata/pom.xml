@@ -9,7 +9,7 @@
 	<name>Spring Data MongoDB Examples</name>
 
 	<properties>
-		<spring.data.mongodb.version>2.0.1.RELEASE</spring.data.mongodb.version>
+		<spring.data.mongodb.version>3.3.5</spring.data.mongodb.version>
 		<mongo.driver.version>3.4.2</mongo.driver.version>
 		<spring.version>5.0.1.RELEASE</spring.version>
 		
